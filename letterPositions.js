@@ -37,12 +37,12 @@ const letterPositions = function(sent) {
     }
     }else{
    
-      console.log("else",i);
+      //console.log("else",i);
     res[letter].push(i);
     // console.log(res);
   }
   }
-   console.log("resfult final",res);
+   //console.log("resfult final",res);
   return res;
 
 };
