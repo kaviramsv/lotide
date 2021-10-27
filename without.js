@@ -25,13 +25,14 @@ const without = function (arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) {
     let matching = false;
     for (let j = 0; j < arr2.length; j++) {
-      // console.log(typeof arr1[i], typeof arr2[j]);
-
-
+      //  console.log(typeof arr1[i], typeof arr2[j]);
+      //  console.log(arr1[i], arr2[j]);
       if (arr1[i] !== arr2[j]) {//if element in j not in 
         
         if (typeof arr1[i] == typeof arr2[j]) {
+          // console.log("pushed"+arr1[i]);
           new_arr.push(arr1[i]);
+
         }
       }
      }
@@ -39,6 +40,6 @@ const without = function (arr1, arr2) {
   return new_arr;  // return new_arr;
 }
 const words = ["hello", "world", "lighthouse"];
-without([1, 2, 3], [2]) // => [1, 3]
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+console.log(without([1, 2, 3], [2])) // => [1, 3]
+console.log(without(["1", "2", "3","l"], [1, 2, "3"]) )// => ["1", "2"]
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
