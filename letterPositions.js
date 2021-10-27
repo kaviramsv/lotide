@@ -28,12 +28,12 @@ const letterPositions = function(sent) {
  for (let i=0;i<noSpaces.length;i++){
     
     let letter=noSpaces[i];
-    console.log(letter);
+    // console.log(letter);
     if (!res[letter]) {
       if(letter !==" ")
       {
       res[letter] =[i];
-      console.log("if",i);
+      // console.log("if",i);
     }
     }else{
    
