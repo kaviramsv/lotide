@@ -39,12 +39,15 @@ const without = function (arr1, arr2) {
   }
   return new_arr;  // return new_arr;
 }
+
+// =================================test data
+
 const words = ["hello", "world", "lighthouse"];
 console.log(without([1, 2, 3], [2])) // => [1, 3]
 console.log(without(["1", "2", "3", "l"], [1, 2, "3"]))// => ["1", "2"]
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
-
+module.exports=without;
 //inside for//for
 // let new_arr=[];
 // for (let i = 0; i < source.length; i++) {

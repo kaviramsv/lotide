@@ -1,25 +1,4 @@
-// const eqArrays = function (arr1, arr2) {
-//   if (arr1.length != arr2.length) {
-//     return false;
-//   } else {
-//     for (let i = 0; i <= arr1.length - 1; i++) {
-//       if (arr1[i] !== arr2[i]) {
-//         return false;
-//       }
-//     }
-//     return true;
-//   }
-// }
 
-// const assertArraysEqual=function (arr1,arr2){
-//   if (eqArrays(arr1,arr2)) {
-//     console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-//   } else {
-//     console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-//   }
-// };
-// middle([1, 2, 3, 4]) // => [2, 3]
-// middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 
  const eqArrays = require('./eqArrays');
  const assertArraysEqual = require('./assertArraysEqual');
@@ -47,10 +26,33 @@ module.exports=middle;
 // middle([1, 2, 3, 4]) // => [2, 3]
 // middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 
-
+// =======================test data
 
 // assertArraysEqual(middle([1, 2]), [1, 2])
 // assertArraysEqual(middle([1]), [1])
 // assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
 // assertArraysEqual(middle([1, 2, 3]), [2])
 // assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4])
+// ===========================ref
+// const eqArrays = function (arr1, arr2) {
+//   if (arr1.length != arr2.length) {
+//     return false;
+//   } else {
+//     for (let i = 0; i <= arr1.length - 1; i++) {
+//       if (arr1[i] !== arr2[i]) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
+// }
+
+// const assertArraysEqual=function (arr1,arr2){
+//   if (eqArrays(arr1,arr2)) {
+//     console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
+//   } else {
+//     console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
+//   }
+// };
+// middle([1, 2, 3, 4]) // => [2, 3]
+// middle([1, 2, 3, 4, 5, 6]) // => [3, 4]

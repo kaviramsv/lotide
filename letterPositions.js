@@ -22,7 +22,7 @@ const assertArraysEqual=function (arr1,arr2){
 const letterPositions = function(sent) {
   
   // logic to update results here
-  const res={};
+ const res={};
  const noSpaces = sent;
  let ct=1;
  for (let i=0;i<noSpaces.length;i++){
@@ -62,3 +62,5 @@ console.log(letterPositions("lighthouse in the house"));
 // }
 
 assertArraysEqual(letterPositions("hello").e, [1]);
+
+module.exports=letterPositions;
